@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight, LayoutTemplate, Search, Target, Workflow } from "lucide-react";
+import { ArrowUpRight, Gauge, LayoutTemplate, Search, Target, Workflow } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 
 const audiences = [
@@ -18,6 +18,7 @@ const capabilities = [
   { title: "Design e desenvolvimento", text: "Uma experiência própria, rápida e pensada para celular.", icon: LayoutTemplate },
   { title: "Conversão e SEO", text: "Conteúdo, busca e chamadas para transformar interesse em contato.", icon: Search },
   { title: "Integrações", text: "WhatsApp, formulários e ferramentas ligadas ao fluxo comercial.", icon: Workflow },
+  { title: "Performance e publicação", text: "Testes, velocidade e revisão final antes do site entrar no ar.", icon: Gauge },
 ];
 
 export function AudiencesSection() {
