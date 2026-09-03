@@ -3,9 +3,9 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import type { Project } from "@/lib/content";
 
-export function ProjectCard({ project, featured = false }: { project: Project; featured?: boolean }) {
+export function ProjectCard({ project, featured = false, minimal = false }: { project: Project; featured?: boolean; minimal?: boolean }) {
   return (
-    <article className={`project-card${featured ? " is-featured" : ""}`}>
+    <article className={`project-card${featured ? " is-featured" : ""}${minimal ? " is-minimal" : ""}${project.trimArtboard ? " has-artboard-trim" : ""}`}>
       <Link href={`/projetos/${project.slug}`} className="project-image" aria-label={`Ver case ${project.name}`}>
         <Image
           src={project.image}
@@ -22,15 +22,15 @@ export function ProjectCard({ project, featured = false }: { project: Project; f
       <div className="project-copy">
         <div>
           <h3>{project.name}</h3>
-          <p>{project.summary}</p>
+          {minimal ? null : <p>{project.summary}</p>}
         </div>
         <Link href={`/projetos/${project.slug}`} aria-label={`Ler detalhes do projeto ${project.name}`}>
           <ArrowUpRight aria-hidden="true" />
         </Link>
       </div>
-      <ul className="tag-list" aria-label={`Entregas do projeto ${project.name}`}>
+      {minimal ? null : <ul className="tag-list" aria-label={`Entregas do projeto ${project.name}`}>
         {project.tags.map((tag) => <li key={tag}>{tag}</li>)}
-      </ul>
+      </ul>}
     </article>
   );
 }

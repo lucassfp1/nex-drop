@@ -52,8 +52,8 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           <p className="project-lead">{project.summary}</p>
         </div>
 
-        <div className="project-detail-image">
-          <Image src={project.image} alt={project.imageAlt} priority sizes="(max-width: 768px) 94vw, 88vw" placeholder="blur" />
+        <div className={`project-detail-image${project.trimArtboard ? " has-artboard-trim" : ""}`}>
+          <Image src={project.image} alt={project.imageAlt} preload sizes="(max-width: 768px) 94vw, 88vw" placeholder="blur" />
         </div>
 
         <div className="project-detail-content">

@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowDown, ArrowUpRight } from "lucide-react";
 import adFlowImage from "@/images/AdFlow.jpg";
-import advocacyImage from "@/images/site-adv.jpg";
 import { whatsappUrl } from "@/lib/site";
 
 const niches = ["Advocacia", "Odontologia", "Clínicas", "Personal trainers", "Contabilidade", "Arquitetura", "Consultoria", "Negócios locais"];
@@ -25,17 +24,32 @@ export function Hero() {
             <li>Design estratégico</li><li>Mobile first</li><li>SEO ready</li>
           </ul>
         </div>
-        <div className="hero-showcase" aria-label="Prévia de projetos da NexDrop">
-          <div className="showcase-card showcase-card-main">
-            <Image src={adFlowImage} alt="Página inicial do projeto AdFlow" priority sizes="(max-width: 900px) 88vw, 46vw" placeholder="blur" />
+        <div className="hero-showcase" role="group" aria-label="Prévia de projetos da NexDrop">
+          <div className="showcase-frame">
+            <div className="showcase-browser-bar" aria-hidden="true">
+              <span className="browser-dots"><i /><i /><i /></span>
+              <span>nexdrop / selected work</span>
+              <span>01</span>
+            </div>
+            <div className="showcase-viewport">
+              <Image
+                src={adFlowImage}
+                alt="Página inicial completa do projeto AdFlow"
+                fill
+                preload
+                sizes="(max-width: 900px) 94vw, 50vw"
+                placeholder="blur"
+              />
+            </div>
           </div>
-          <div className="showcase-card showcase-card-back">
-            <Image src={advocacyImage} alt="Página conceitual de um escritório de advocacia" sizes="(max-width: 900px) 60vw, 28vw" placeholder="blur" />
+          <div className="showcase-info-bar">
+            <span className="showcase-status"><i aria-hidden="true" /> Projeto em foco</span>
+            <span className="showcase-project"><small>01 / Produto digital</small><strong>AdFlow</strong></span>
+            <Link href="/projetos/adflow" aria-label="Conhecer o projeto AdFlow"><ArrowUpRight aria-hidden="true" /></Link>
           </div>
-          <span className="showcase-label">Projetos existentes • Direções sob medida</span>
         </div>
       </section>
-      <div className="niche-strip" aria-label="Segmentos atendidos">
+      <div className="niche-strip" role="region" aria-label="Segmentos atendidos">
         <div className="niche-track">
           {[...niches, ...niches].map((niche, index) => <span key={`${niche}-${index}`} aria-hidden={index >= niches.length}>{niche} <i aria-hidden="true" /></span>)}
         </div>

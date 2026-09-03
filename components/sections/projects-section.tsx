@@ -12,7 +12,7 @@ export function ProjectsSection() {
         <Link href="/projetos" className="text-link">Ver todos os projetos <ArrowRight aria-hidden="true" /></Link>
       </Reveal>
       <div className="projects-list">
-        {projects.slice(0, 3).map((project, index) => <Reveal key={project.slug}><ProjectCard project={project} featured={index === 0} /></Reveal>)}
+        {projects.slice(0, 3).map((project, index) => <Reveal key={project.slug}><ProjectCard project={project} featured={index === 0} minimal /></Reveal>)}
       </div>
     </section>
   );

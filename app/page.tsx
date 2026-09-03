@@ -4,7 +4,7 @@ import { FinalCta } from "@/components/sections/final-cta";
 import { Hero } from "@/components/sections/hero";
 import { ProblemSection } from "@/components/sections/problem-section";
 import { ProjectsSection } from "@/components/sections/projects-section";
-import { ComparisonSection, ProcessSection, ServicesSection } from "@/components/sections/strategy-sections";
+import { ProcessSection } from "@/components/sections/strategy-sections";
 import { StructuredData } from "@/components/structured-data";
 import { faqs } from "@/lib/content";
 import { siteConfig, siteUrl } from "@/lib/site";
@@ -32,8 +32,6 @@ export default function Home() {
       <ProblemSection />
       <ProjectsSection />
       <AudiencesSection />
-      <ComparisonSection />
-      <ServicesSection />
       <ProcessSection />
       <FaqSection />
       <FinalCta />

@@ -18,6 +18,7 @@ export type Project = {
   image: StaticImageData;
   imageAlt: string;
   externalUrl: string;
+  trimArtboard?: boolean;
 };
 
 export const projects: Project[] = [
@@ -56,6 +57,7 @@ export const projects: Project[] = [
     image: roseImage,
     imageAlt: "Página conceitual Rosé para uma marca premium de beleza",
     externalUrl: "https://v0-redesign-de-marca-premium.vercel.app/",
+    trimArtboard: true,
   },
   {
     slug: "advocacia-estrategica",
@@ -74,6 +76,7 @@ export const projects: Project[] = [
     image: advocacyImage,
     imageAlt: "Página conceitual para escritório de advocacia Monteiro e Associados",
     externalUrl: "https://v0-criar-arquivo-css.vercel.app/",
+    trimArtboard: true,
   },
   {
     slug: "koi-tokyo",
@@ -92,6 +95,7 @@ export const projects: Project[] = [
     image: japaneseImage,
     imageAlt: "Página conceitual do restaurante japonês Kōi Tokyo",
     externalUrl: "https://website-japones.vercel.app/",
+    trimArtboard: true,
   },
 ];
 

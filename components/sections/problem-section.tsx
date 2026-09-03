@@ -14,11 +14,13 @@ export function ProblemSection() {
         <div><p className="section-kicker">Antes do primeiro contato</p><h2 id="problem-title">Seu cliente pesquisa antes de escolher.</h2></div>
         <p>A presença digital participa da decisão. Ela precisa confirmar a qualidade que o seu negócio já entrega no mundo real.</p>
       </Reveal>
-      <div className="problem-grid">
+      <div className="problem-list">
         {problems.map(({ number, title, text, icon: Icon }) => (
-          <Reveal className="problem-card" key={number}>
-            <div className="card-topline"><span>{number}</span><Icon aria-hidden="true" /></div>
-            <h3>{title}</h3><p>{text}</p>
+          <Reveal className="problem-row" key={number}>
+            <span className="problem-index">{number}</span>
+            <span className="problem-icon"><Icon aria-hidden="true" /></span>
+            <h3>{title}</h3>
+            <p>{text}</p>
           </Reveal>
         ))}
       </div>
