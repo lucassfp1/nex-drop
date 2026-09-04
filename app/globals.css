@@ -2006,7 +2006,7 @@ a {
   .page-intro h1 { font-size: clamp(3rem, 15vw, 4.8rem); }
   .project-detail { padding-top: 125px; }
   .project-detail-head, .project-detail-content, .project-back { width: calc(100% - 32px); }
-  .project-detail-head h1 { font-size: clamp(3.5rem, 18vw, 5.8rem); }
+  .project-detail-head h1 { font-size: clamp(3rem, 15vw, 5.8rem); }
   .project-detail-image { width: calc(100% - 16px); border-radius: 14px; }
   .detail-columns { margin-top: 44px; }
   .detail-actions { display: grid; }

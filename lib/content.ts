@@ -2,7 +2,7 @@ import type { StaticImageData } from "next/image";
 import adFlowImage from "@/images/AdFlow.jpg";
 import japaneseImage from "@/images/japones-site.jpg";
 import roseImage from "@/images/redesign-premium.jpg";
-import advocacyImage from "@/images/site-adv.jpg";
+import advocacyImage from "@/images/monteiro-vasconcelos-hero.png";
 
 export type Project = {
   slug: string;
@@ -62,7 +62,7 @@ export const projects: Project[] = [
   {
     slug: "advocacia-estrategica",
     index: "03",
-    name: "Monteiro & Associados",
+    name: "Monteiro & Vasconcelos",
     category: "Advocacia",
     status: "Projeto conceitual",
     summary: "Uma experiência sóbria para traduzir segurança, proximidade e autoridade jurídica.",
@@ -74,9 +74,8 @@ export const projects: Project[] = [
       "Composição sóbria, tipografia elegante, contraste suave e caminhos de contato fáceis de encontrar.",
     tags: ["Site institucional", "Serviços", "Autoridade"],
     image: advocacyImage,
-    imageAlt: "Página conceitual para escritório de advocacia Monteiro e Associados",
+    imageAlt: "Equipe da Monteiro & Vasconcelos Advocacia em um escritório",
     externalUrl: "https://v0-criar-arquivo-css.vercel.app/",
-    trimArtboard: true,
   },
   {
     slug: "koi-tokyo",
