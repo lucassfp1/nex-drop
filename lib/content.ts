@@ -1,7 +1,7 @@
 import type { StaticImageData } from "next/image";
 import adFlowImage from "@/images/AdFlow.jpg";
 import japaneseImage from "@/images/japones-site.jpg";
-import roseImage from "@/images/redesign-premium.jpg";
+import roseImage from "@/images/rose-campaign-hero.png";
 import advocacyImage from "@/images/monteiro-vasconcelos-hero.png";
 
 export type Project = {
@@ -19,6 +19,7 @@ export type Project = {
   imageAlt: string;
   externalUrl: string;
   trimArtboard?: boolean;
+  wideArtwork?: boolean;
 };
 
 export const projects: Project[] = [
@@ -57,7 +58,7 @@ export const projects: Project[] = [
     image: roseImage,
     imageAlt: "Página conceitual Rosé para uma marca premium de beleza",
     externalUrl: "https://v0-redesign-de-marca-premium.vercel.app/",
-    trimArtboard: true,
+    wideArtwork: true,
   },
   {
     slug: "advocacia-estrategica",

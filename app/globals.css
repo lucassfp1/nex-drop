@@ -830,6 +830,15 @@ a {
   transform: scale(1.145);
 }
 
+.project-card.has-wide-artwork .project-image {
+  aspect-ratio: 16 / 9;
+}
+
+.project-card.has-wide-artwork .project-image img,
+.project-card.has-wide-artwork .project-image:hover img {
+  transform: none;
+}
+
 .project-image:hover > span {
   transform: translateY(0);
   opacity: 1;
@@ -1975,6 +1984,7 @@ a {
   .projects-list > :first-child { grid-column: auto; }
   .project-card.is-featured .project-image, .project-image { aspect-ratio: 4 / 3; border-radius: 14px; }
   .project-card.has-artboard-trim .project-image { aspect-ratio: 16 / 10; }
+  .project-card.has-wide-artwork .project-image { aspect-ratio: 16 / 9; }
   .project-meta { align-items: start; }
   .project-meta p:last-child { text-align: right; }
   .project-copy h3 { font-size: 2rem; }
