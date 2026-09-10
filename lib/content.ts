@@ -3,6 +3,8 @@ import adFlowImage from "@/images/AdFlow.jpg";
 import japaneseImage from "@/images/japones-site.jpg";
 import roseImage from "@/images/rose-campaign-hero.png";
 import advocacyImage from "@/images/monteiro-vasconcelos-hero.png";
+import vitaDentalImage from "@/images/vitadental-hero.png";
+import nexoImage from "@/images/nexo-contabilidade-hero.png";
 
 export type Project = {
   slug: string;
@@ -79,8 +81,46 @@ export const projects: Project[] = [
     externalUrl: "https://v0-criar-arquivo-css.vercel.app/",
   },
   {
-    slug: "koi-tokyo",
+    slug: "vitadental",
     index: "04",
+    name: "VitaDental",
+    category: "Odontologia",
+    status: "Projeto publicado",
+    summary: "Um site acolhedor que apresenta os cuidados odontológicos e aproxima o paciente do agendamento pelo WhatsApp.",
+    overview:
+      "A presença digital da VitaDental reúne serviços, informações sobre a clínica e caminhos de contato em uma experiência pensada para toda a família.",
+    objective:
+      "Ajudar o paciente a conhecer os tratamentos, encontrar as informações de que precisa e dar o primeiro passo para agendar uma consulta.",
+    direction:
+      "Tons claros e verde profundo, fotografia centrada no cuidado e uma hierarquia que torna os serviços e o agendamento fáceis de encontrar.",
+    tags: ["Site institucional", "Odontologia", "WhatsApp"],
+    image: vitaDentalImage,
+    imageAlt: "Página da VitaDental com paciente em atendimento e a chamada Sorrir bem faz parte de uma vida melhor",
+    externalUrl: "https://vitadental-eight.vercel.app",
+    wideArtwork: true,
+  },
+  {
+    slug: "nexo-contabilidade",
+    index: "05",
+    name: "Nexo Contabilidade",
+    category: "Contabilidade",
+    status: "Projeto publicado",
+    summary: "Uma presença profissional que organiza os serviços contábeis com clareza e facilita o contato de empresas com um especialista.",
+    overview:
+      "O site apresenta a Nexo Contabilidade, suas soluções para empresas e os caminhos para conversar sobre abertura de negócio e gestão contábil.",
+    objective:
+      "Tornar a oferta contábil mais fácil de entender e conduzir o empresário até uma conversa sobre as necessidades do seu negócio.",
+    direction:
+      "Contraste entre preto e dourado, tipografia editorial e imagens de escritório compõem uma identidade sóbria, com serviços e chamadas de contato bem definidos.",
+    tags: ["Site institucional", "Contabilidade", "Direção visual"],
+    image: nexoImage,
+    imageAlt: "Página da Nexo Contabilidade em preto e dourado com a chamada Menos burocracia. Mais crescimento para o seu negócio",
+    externalUrl: "https://nexo-contabil-khaki.vercel.app/#inicio",
+    wideArtwork: true,
+  },
+  {
+    slug: "koi-tokyo",
+    index: "06",
     name: "Kōi Tokyo",
     category: "Gastronomia",
     status: "Projeto conceitual",

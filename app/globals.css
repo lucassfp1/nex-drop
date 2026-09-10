@@ -836,7 +836,14 @@ a {
 
 .project-card.has-wide-artwork .project-image img,
 .project-card.has-wide-artwork .project-image:hover img {
+  object-fit: contain;
   transform: none;
+  filter: none;
+}
+
+.project-card.has-wide-artwork .project-image::after,
+.project-card.has-wide-artwork .project-image > span {
+  display: none;
 }
 
 .project-image:hover > span {
