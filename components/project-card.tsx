@@ -6,7 +6,7 @@ import type { Project } from "@/lib/content";
 export function ProjectCard({ project, featured = false, minimal = false }: { project: Project; featured?: boolean; minimal?: boolean }) {
   return (
     <article className={`project-card${featured ? " is-featured" : ""}${minimal ? " is-minimal" : ""}${project.trimArtboard ? " has-artboard-trim" : ""}${project.wideArtwork ? " has-wide-artwork" : ""}`}>
-      <Link href={`/projetos/${project.slug}`} className="project-image" aria-label={`Ver case ${project.name}`}>
+      <Link href={`/projetos/${project.slug}`} className="project-image" style={project.wideArtwork ? { aspectRatio: `${project.image.width} / ${project.image.height}` } : undefined} aria-label={`Ver case ${project.name}`}>
         <Image
           src={project.image}
           alt={project.imageAlt}

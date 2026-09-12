@@ -6,7 +6,7 @@ import { projects } from "@/lib/content";
 
 export const metadata: Metadata = createMetadata({
   title: "Projetos de sites e experiências digitais",
-  description: "Conheça projetos publicados e estudos conceituais da NexDrop para produtos digitais, beleza, advocacia, odontologia, contabilidade e gastronomia.",
+  description: "Explore os projetos da NexDrop para produtos digitais, beleza, advocacia, odontologia, contabilidade, gastronomia e personal trainers.",
   path: "/projetos",
 });
 

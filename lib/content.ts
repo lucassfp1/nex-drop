@@ -5,6 +5,7 @@ import roseImage from "@/images/rose-campaign-hero.png";
 import advocacyImage from "@/images/monteiro-vasconcelos-hero.png";
 import vitaDentalImage from "@/images/vitadental-hero.png";
 import nexoImage from "@/images/nexo-contabilidade-hero.png";
+import personalImage from "@/images/bruno-almeida-personal-hero.png";
 
 export type Project = {
   slug: string;
@@ -136,6 +137,25 @@ export const projects: Project[] = [
     imageAlt: "Página conceitual do restaurante japonês Kōi Tokyo",
     externalUrl: "https://website-japones.vercel.app/",
     trimArtboard: true,
+  },
+  {
+    slug: "bruno-almeida-personal",
+    index: "07",
+    name: "Bruno Almeida",
+    category: "Personal trainer",
+    status: "Projeto publicado",
+    summary: "Um site que apresenta o treinamento personalizado com energia e clareza, conectando os objetivos do aluno ao agendamento de uma avaliação.",
+    overview:
+      "A presença digital de Bruno Almeida reúne sua proposta de acompanhamento, modalidades de treino e caminhos de contato para quem busca orientação na rotina de exercícios.",
+    objective:
+      "Ajudar o visitante a conhecer o método de trabalho, entender as opções de acompanhamento e iniciar uma conversa sobre seus objetivos.",
+    direction:
+      "Fotografia de treino, fundo escuro e acentos em laranja compõem uma identidade enérgica, com leitura direta dos serviços e chamadas para avaliação pelo WhatsApp.",
+    tags: ["Site institucional", "Personal trainer", "WhatsApp"],
+    image: personalImage,
+    imageAlt: "Página de Bruno Almeida Personal Trainer em preto e laranja, com fotografia de treino e a chamada Mais disciplina para uma vida mais forte",
+    externalUrl: "https://personal-gamma-sandy.vercel.app",
+    wideArtwork: true,
   },
 ];
 
